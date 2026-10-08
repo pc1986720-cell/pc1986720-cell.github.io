@@ -484,26 +484,106 @@
       </ul>
     </div>
 
-    <div id="labs" class="tab-content">
-      <p style="margin-bottom: 4px;"><span class="prompt">guest@infosec</span>:<span class="path">~</span>$ docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"</p>
-      <h2>[ Security Labs & Environment ]</h2>
-      
-      <p style="color: #00ccff; margin-bottom: 4px;">/* Network Security & Hybrid Simulation */</p>
-      <ul class="output-list" style="margin-bottom: 15px;">
-        <li><span class="item-title">Enterprise Infrastructure Simulation</span> - 建置 <span class="project-tag">Fortinet</span> 與 <span class="project-tag">Palo Alto (PA)</span> 虛擬化防火牆環境，實作總公司與分公司之跨品牌 <span class="project-tag">IPsec VPN Site-to-Site</span> 串接。</li>
-        <li><span class="item-title">EVE-NG Virtual Network Lab</span> - 於虛擬化平台架設 <span class="project-tag">EVE-NG</span> 大型模擬環境，導入 <span class="project-tag">Cisco IOS/Nexus IOL</span> 鏡像。</li>
-        <li><span class="item-title">Bare-Metal ESXi Infrastructure</span> - 實作 <span class="project-tag">VMware ESXi</span> Hypervisor 從底層裸機（Bare-Metal）零開始部署。</li>
-      </ul>
+<div id="labs" class="tab-content">
+  <p style="margin-bottom: 4px;">
+    <span class="prompt">guest@infosec</span>:<span class="path">~</span>$ docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
+  </p>
 
-      <p style="color: #00ccff; margin-bottom: 4px;">/* NetDevOps & SecOps Automation */</p>
-      <ul class="output-list">
-        <li><span class="item-title">LibreNMS Custom Telemetry & Alerting</span> - 實作 <span class="project-tag">LibreNMS</span> 監控系統客製化，撰寫進階告警規則（Alert Rules）。</li>
-        <li><span class="item-title">Webhook Automated Notification</span> - 串接 LibreNMS 與通訊軟體 API（Webhook），開發網路事件即時告警機制.</li>
-        <li><span class="item-title">FortiSIEM Log Parser Scripter</span> - 針對 <span class="project-tag">FortiSIEM</span> 資安事件 management 平台，撰寫客製化日誌解析腳本（Log Parser）。</li>
-        <li><span class="item-title">Palo Alto Threat Mitigation Automation</span> - 撰寫 <span class="project-tag">Python API 腳本</span> 串接開源威脅情報（Threat Intel Feed），實作自動化導入 PA 防火牆惡意 IP 黑名單。</li>
-		<li><span class="item-title">NTUCC IT Security Portal</span> - 自行開發企業資安整合管理平台，整合 <span class="project-tag">CrowdStrike Falcon</span>、<span class="project-tag">Cisco ISE</span>、<span class="project-tag">F5 ASM/WAF</span>、<span class="project-tag">Palo Alto</span>、<span class="project-tag">Check Point</span>、<span class="project-tag">Power Automate</span> 與稽核追蹤機制，提供設備查詢、安全事件分析、自動化維運及資安治理可視化功能。</li>
-      </ul>
-    </div>
+  <h2>[ Security Labs & Environment ]</h2>
+
+  <p style="color: #00ccff; margin-bottom: 4px;">
+    /* Network Security & Hybrid Simulation */
+  </p>
+
+  <ul class="output-list" style="margin-bottom: 15px;">
+
+    <li>
+      <span class="item-title">Enterprise Infrastructure Simulation</span>
+      -
+      建置 <span class="project-tag">Fortinet</span> 與
+      <span class="project-tag">Palo Alto (PA)</span>
+      虛擬化防火牆環境，實作跨品牌
+      <span class="project-tag">IPsec VPN Site-to-Site</span>
+      串接。
+    </li>
+
+    <li>
+      <span class="item-title">EVE-NG Virtual Network Lab</span>
+      -
+      於虛擬化平台建置
+      <span class="project-tag">EVE-NG</span>
+      模擬環境，導入
+      <span class="project-tag">Cisco IOS/Nexus IOL</span>
+      鏡像進行網路實驗與測試。
+    </li>
+
+    <li>
+      <span class="item-title">Bare-Metal ESXi Infrastructure</span>
+      -
+      實作
+      <span class="project-tag">VMware ESXi</span>
+      Hypervisor 裸機部署與虛擬化環境建置。
+    </li>
+
+  </ul>
+
+  <br>
+
+  <p style="color: #00ccff; margin-bottom: 4px;">
+    /* Security Automation & SecOps */
+  </p>
+
+  <ul class="output-list">
+
+    <li>
+      <span class="item-title">LibreNMS Custom Telemetry & Alerting</span>
+      -
+      實作
+      <span class="project-tag">LibreNMS</span>
+      監控系統客製化與進階告警規則開發。
+    </li>
+
+    <li>
+      <span class="item-title">Webhook Automated Notification</span>
+      -
+      串接
+      <span class="project-tag">Webhook API</span>
+      與通訊平台，實作網路事件即時通知機制。
+    </li>
+
+    <li>
+      <span class="item-title">FortiSIEM Log Parser Scripter</span>
+      -
+      針對
+      <span class="project-tag">FortiSIEM</span>
+      平台開發客製化日誌解析腳本（Log Parser）。
+    </li>
+
+    <li>
+      <span class="item-title">Palo Alto Threat Mitigation Automation</span>
+      -
+      使用
+      <span class="project-tag">Python API</span>
+      串接威脅情報來源，自動更新
+      <span class="project-tag">Palo Alto</span>
+      防火牆惡意 IP 黑名單。
+    </li>
+
+    <li>
+      <span class="item-title">NTUCC IT Security Portal</span>
+      -
+      開發企業資安整合管理平台，整合
+      <span class="project-tag">CrowdStrike Falcon</span>、
+      <span class="project-tag">Cisco ISE</span>、
+      <span class="project-tag">F5 ASM/WAF</span>、
+      <span class="project-tag">Palo Alto</span>、
+      <span class="project-tag">Check Point</span>、
+      <span class="project-tag">Claroty</span>
+      等資安設備資訊，提升設備管理與資訊整合效率。
+    </li>
+
+  </ul>
+</div>
 
     <div id="gallery" class="tab-content">
       <p style="margin-bottom: 4px;"><span class="prompt">guest@infosec</span>:<span class="path">~</span>$ cat templates/mentors.md</p>
